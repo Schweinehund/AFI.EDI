@@ -1,0 +1,187 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+
+        <ClassType ID="AFI.EDI.ComputerRole.Server" Base="AFI.EDI.ComputerRole" Accessibility="Public" Abstract="true" Hosted="true" Singleton="false"/>
+          
+        <ClassType ID="AFI.EDI.ComputerRole.NativeServicesServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.LiasonECSServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.NubridgesAS2Server" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.EximConnect9797Server" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.LiasonECSGatewayServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComAJBFolderMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComEmailInboxMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComInboxMonitorAFIServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComInboxMonitorWVFServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComTLEFolderMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.EDIDailyReportingServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.eComTransProcessorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.TransactionRouterServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.TransactionRouterAFTServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.TransactionRouterEmailsServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.TransactionRouterVEDIServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.EximFolderMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+        <ClassType ID="AFI.EDI.ComputerRole.FNetFolderMonitorServer" Base="AFI.EDI.ComputerRole.Server" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false"/>
+      
+      </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.Server">
+          <Name>AFI EDI Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.NativeServicesServer">
+          <Name>AFI EDI Native Services Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.LiasonECSServer">
+          <Name>AFI EDI Liason ECS Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.NubridgesAS2Server">
+          <Name>AFI EDI Nubridges AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.EximConnect9797Server">
+          <Name>AFI EDI EximConnect 9797 Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.LiasonECSGatewayServer">
+          <Name>AFI EDI Liason ECS Gateway Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server">
+          <Name>AFI EDI ICSSvr Outbound AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer">
+          <Name>AFI EDI ICSSvr Outbound ecUtopia Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server">
+          <Name>AFI EDI ICSSvr Outbound Lean AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComAJBFolderMonitorServer">
+          <Name>AFI EDI eCom AJB Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer">
+          <Name>AFI EDI eCom Check Outgoing Queue Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer">
+          <Name>AFI EDI eCom DB Queue Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+        
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer">
+          <Name>AFI EDI eCom DB Queue Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComEmailInboxMonitorServer">
+          <Name>AFI EDI eCom Email Inbox Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer">
+          <Name>AFI EDI eCom FTP Folder Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer">
+          <Name>AFI EDI eCom FTP Folder Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComInboxMonitorAFIServer">
+          <Name>AFI EDI eCom Inbox Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComInboxMonitorWVFServer">
+          <Name>AFI EDI eCom Inbox Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComTLEFolderMonitorServer">
+          <Name>AFI EDI eCom TLE Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.EDIDailyReportingServer">
+          <Name>AFI EDI EDI Daily Reporting Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.eComTransProcessorServer">
+          <Name>AFI EDI eCom TransProcessor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer">
+          <Name>AFI EDI EDI SMTP Queue Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer">
+          <Name>AFI EDI Monitor Service For HighJump Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.TransactionRouterServer">
+          <Name>AFI EDI Transaction Router Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.TransactionRouterAFTServer">
+          <Name>AFI EDI Transaction Router AFT Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.TransactionRouterEmailsServer">
+          <Name>AFI EDI Transaction Router Emails Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.TransactionRouterVEDIServer">
+          <Name>AFI EDI Transaction Router VEDI Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.ComputerRole.EximFolderMonitorServer">
+          <Name>AFI EDI Exim Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

@@ -1,0 +1,798 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instance38533ff09191470086addc45dd9cbb3f" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.NativeServicesServer</Id>
+        <DisplayName>AFI EDI Native Services Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\NativeServices&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.NativeServicesServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.NativeServicesServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancea8406b526aa347ac9f373a103b2b262d" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.LiasonECSServer</Id>
+        <DisplayName>AFI EDI Liason ECS Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\ECS&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.LiasonECSServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.LiasonECSServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancebbfd3870f7db4d51bc5fc74ef321918b" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.FNetFolderMonitorServer</Id>
+        <DisplayName>AFI EDI FNet Folder Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\FNetFolderMonitorService&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.FNetFolderMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.FNetFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance63b93eeb23604267873de538cb74262a" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.EximConnect9797Server</Id>
+        <DisplayName>AFI EDI Exim Connect 9797 Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\EximConnect-9797&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.EximConnect9797Server"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.EximConnect9797Server</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancee75ed697cb8e46778e625a55b5ed7a91" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.LiasonECSGatewayServer</Id>
+        <DisplayName>AFI EDI Liason ECS Gateway Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\ECSProxy&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.LiasonECSGatewayServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.LiasonECSGatewayServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instanceb6457aad4331487a8c8bec4d7801da47" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComDBQueueMonitorWVFServer</Id>
+        <DisplayName>AFI EDI eCom DBQueue Monitor WVF Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom DBQueueMonitor Service WVF&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance3d5876a2e98b4569931758d52012d10f" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.ICSSvrOutboundecUtopiaServer</Id>
+        <DisplayName>AFI EDI ICSSvr Outbound ecUtopia Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\icssvr_outbound_ecUtopia_AS2&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance24a54ae589e24b23aaf6b9ad57e336f1" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.ICSSvrOutboundAS2Server</Id>
+        <DisplayName>AFI EDI ICSSvr Outbound AS2 Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\icssvr_outbound_AS2&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancefb9941eae6e34d6797f751e16cf32283" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.ICSSvrOutboundLeanAS2Server</Id>
+        <DisplayName>AFI EDI ICSSvr Outbound Lean AS2 Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\icssvr_outbound_Lean_AS2&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance1df842b524534fbd831e8e2b052f8725" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComAJBFolderMonitorServer</Id>
+        <DisplayName>AFI EDI eCom AJB Folder Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\AJBFolderMonitorService&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComAJBFolderMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComAJBFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance6f6d1adbde584259b85d55ad55e9b36f" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Id>Discovery.ComputerRole.eComCheckOutgoingQueueServer</Id>
+        <DisplayName>AFI EDI eCom Check Outgoing Queue Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\AshleyeComCheckOutoingQueueService&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance0a38360371d748fb9e86e2264131004a" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComDBQueueMonitorAFIServer</Id>
+        <DisplayName>AFI EDI eCom DBQueue Monitor AFI Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom DBQueueMonitor Service AFI&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance67677796f3224f1ba77b74c8778f5e3f" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.NubridgesAS2Server</Id>
+        <DisplayName>AFI EDI Nubridges AS2 Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\icssvr_AS2&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.NubridgesAS2Server"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.NubridgesAS2Server</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancee6ba5f0f0d434104a5c706693a1bf9bf" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComEmailInboxMonitorServer</Id>
+        <DisplayName>AFI EDI eCom Email Inbox Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom Email Inbox Monitor Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComEmailInboxMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComEmailInboxMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instanceb387458533834ed2922c3f4900ccc626" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComFTPFolderMonitorAFIServer</Id>
+        <DisplayName>AFI EDI eCom FTP Folder Monitor AFI Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom FTPFolderMonitor Service AFI&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instanceab7ce5884ed946d48e667a6d084cbb59" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComFTPFolderMonitorWVFServer</Id>
+        <DisplayName>AFI EDI eCom FTP Folder Monitor WVF Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom FTPFolderMonitor Service WVF&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancef487e36d453440c0b3b5dfdbe9669078" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComInboxMonitorAFIServer</Id>
+        <DisplayName>AFI EDI eCom Inbox Monitor AFI Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom Invoice Monitor Service AFI&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComInboxMonitorAFIServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComInboxMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancea558536d20744597bcec79cf7f6fc690" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComInboxMonitorWVFServer</Id>
+        <DisplayName>AFI EDI eCom Inbox Monitor WVF Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom Invoice Monitor Service WVF&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComInboxMonitorWVFServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComInboxMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancec054f6b4419f48d99ff1fdce81507bb2" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComTLEFolderMonitorServer</Id>
+        <DisplayName>AFI EDI eCom TLE Folder Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom TLEFolderMonitor Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComTLEFolderMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComTLEFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance878024a08d294860aa4126437bf63918" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.EDIDailyReportingServer</Id>
+        <DisplayName>AFI EDI EDI Daily Reporting Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley EDI Daily Reporting Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.EDIDailyReportingServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.EDIDailyReportingServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance2f32cad5848f46cc8f021ebe42453aac" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.eComTransProcessorServer</Id>
+        <DisplayName>AFI EDI eCom Trans Processor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley eCom TransProcessor Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComTransProcessorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.eComTransProcessorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancec067eb5c3e004212adf50bfb5a88f5bd" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.EDISMTPQueueMonitorServer</Id>
+        <DisplayName>AFI EDI EDI SMTP Queue Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley EDI SMTPQueueMonitor Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancebe9e7e8fdb204524ba76b24b6806723d" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.MonitorServiceForHighJumpServer</Id>
+        <DisplayName>AFI EDI Monitor Service For HighJump Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley Monitor Service For HighJump&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance367cacb38730458e8eb1bffcc8569d5e" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.TransactionRouterServer</Id>
+        <DisplayName>AFI EDI Transaction Router Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley Transaction Router Service&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.TransactionRouterServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance57d9e93c2d064d14b743fbff394734fa" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.TransactionRouterAFTServer</Id>
+        <DisplayName>AFI EDI Transaction Router AFT Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley Transaction Router Service AFT&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterAFTServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.TransactionRouterAFTServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancea3a6bc6e1d7446eca3fab0e91e8d63cc" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.TransactionRouterEmailsServer</Id>
+        <DisplayName>AFI EDI Transaction Router Emails Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley Transaction Router Service Emails&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterEmailsServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.TransactionRouterEmailsServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance509dd3804c2d40b4a8b603f52aca6a9e" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.TransactionRouterVEDIServer</Id>
+        <DisplayName>AFI EDI Transaction Router VEDI Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\Ashley Transaction Router Service VEDI&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterVEDIServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.TransactionRouterVEDIServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance0251be65159c47fbaf00d11608fb5e22" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.ComputerRole.EximFolderMonitorServer</Id>
+        <DisplayName>AFI EDI Exim Folder Monitor Server</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;ComputerName&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/ComputerName&gt;&lt;RegistryAttributeDefinitions&gt;&lt;RegistryAttributeDefinition&gt;&lt;AttributeName&gt;KeyExists&lt;/AttributeName&gt;&lt;Path&gt;SYSTEM\CurrentControlSet\Services\EximFolderMonitorService&lt;/Path&gt;&lt;PathType&gt;0&lt;/PathType&gt;&lt;AttributeType&gt;0&lt;/AttributeType&gt;&lt;/RegistryAttributeDefinition&gt;&lt;/RegistryAttributeDefinitions&gt;&lt;Frequency&gt;600&lt;/Frequency&gt;&lt;ClassId&gt;$MPElement[Name="AFI.EDI.ComputerRole.EximFolderMonitorServer"]$&lt;/ClassId&gt;&lt;InstanceSettings&gt;&lt;Settings&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;Setting&gt;&lt;Name&gt;$MPElement[Name="System!System.Entity"]/DisplayName$&lt;/Name&gt;&lt;Value&gt;$Target/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Setting&gt;&lt;/Settings&gt;&lt;/InstanceSettings&gt;&lt;Expression&gt;&lt;SimpleExpression&gt;&lt;ValueExpression&gt;&lt;XPathQuery&gt;Values/KeyExists&lt;/XPathQuery&gt;&lt;/ValueExpression&gt;&lt;Operator&gt;Equal&lt;/Operator&gt;&lt;ValueExpression&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/ValueExpression&gt;&lt;/SimpleExpression&gt;&lt;/Expression&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.FilteredRegistryDiscoveryProvider</DataSourceType>
+        <Target>Windows!Microsoft.Windows.Server.Computer</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AFI.EDI.ComputerRole.EximFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance9e829a628c104508b3b7b0a600155433" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.Populate.Servers</Id>
+        <DisplayName>Populate EDI Servers</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;RuleId&gt;$MPElement$&lt;/RuleId&gt;&lt;GroupInstanceId&gt;$Target/Id$&lt;/GroupInstanceId&gt;&lt;MembershipRules&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.NativeServicesServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsNativeServicesServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.LiasonECSServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsLiasonECSServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.NubridgesAS2Server"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsNubridgesAS2Server"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.EximConnect9797Server"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsEximConnect9797Server"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.LiasonECSGatewayServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsLiasonECSGatewayServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsICSSvrOutboundAS2Server"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsICSSvrOutboundecUtopiaServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsICSSvrOutboundLeanAS2Server"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComAJBFolderMonitorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComAJBFolderMonitorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComCheckOutgoingQueueServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComDBQueueMonitorAFIServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComDBQueueMonitorWVFServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComEmailInboxMonitorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComEmailInboxMonitorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComFTPFolderMonitorAFIServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComFTPFolderMonitorWVFServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComInboxMonitorAFIServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComInboxMonitorAFIServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComInboxMonitorWVFServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComInboxMonitorWVFServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComTLEFolderMonitorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComTLEFolderMonitorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.EDIDailyReportingServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsEDIDailyReportingServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.eComTransProcessorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainseComTransProcessorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsEDISMTPQueueMonitorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsMonitorServiceForHighJumpServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsTransactionRouterServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterAFTServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsTransactionRouterAFTServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterEmailsServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsTransactionRouterEmailsServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.TransactionRouterVEDIServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsTransactionRouterVEDIServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.ComputerRole.EximFolderMonitorServer"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ServersContainsEximFolderMonitorServer"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;/MembershipRules&gt;</DataSourceConfig>
+        <DataSourceType>SC!Microsoft.SystemCenter.GroupPopulator</DataSourceType>
+        <Target>AFI.EDI.Servers</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses />
+        <DiscoveryRelationships>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComAJBFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComCheckOutgoingQueueServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComDBQueueMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComDBQueueMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComEmailInboxMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComFTPFolderMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComFTPFolderMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComInboxMonitorAFIServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComInboxMonitorWVFServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComTLEFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainseComTransProcessorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsEDIDailyReportingServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsEDISMTPQueueMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsEximConnect9797Server</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsEximFolderMonitorServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsICSSvrOutboundAS2Server</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsICSSvrOutboundecUtopiaServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsICSSvrOutboundLeanAS2Server</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsLiasonECSGatewayServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsLiasonECSServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsMonitorServiceForHighJumpServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsNativeServicesServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsNubridgesAS2Server</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsTransactionRouterAFTServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsTransactionRouterEmailsServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsTransactionRouterServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ServersContainsTransactionRouterVEDIServer</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+        </DiscoveryRelationships>
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instancea2614fee77e84dcab3888047dc488d4f" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>Discovery.Populate.Application</Id>
+        <DisplayName>Populate EDI Application</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;RuleId&gt;$MPElement$&lt;/RuleId&gt;&lt;GroupInstanceId&gt;$Target/Id$&lt;/GroupInstanceId&gt;&lt;MembershipRules&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AFI.EDI.Servers"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AFI.EDI.ApplicationContainsServers"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;/MembershipRules&gt;</DataSourceConfig>
+        <DataSourceType>SC!Microsoft.SystemCenter.GroupPopulator</DataSourceType>
+        <Target>AFI.EDI.Application</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses />
+        <DiscoveryRelationships>
+          <DiscoveryRelationshipItem>
+            <TypeId>AFI.EDI.ApplicationContainsServers</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+        </DiscoveryRelationships>
+      </DiscoveryConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

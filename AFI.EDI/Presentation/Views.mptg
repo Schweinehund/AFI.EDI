@@ -1,0 +1,381 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instanceaac2f41d1cd940b795894c063f089c83" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.FNetFolderMonitorServer</Id>
+        <DisplayName>FNet Folder Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.FNetFolderMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instanceaec00020c6484af7bb62752f3da3698d" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.NativeServicesServer</Id>
+        <DisplayName>Native Services Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.NativeServicesServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance54eb97ca1457418cba53be37796fd876" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.LiasonECSServer</Id>
+        <DisplayName>Liason ECS Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.LiasonECSServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance91be861effa2452986671baef4cd1048" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.NubridgesAS2Server</Id>
+        <DisplayName>Nubridges AS2 Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.NubridgesAS2Server</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance9ab7a2570fc04151bcc05e237f79d01e" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.EximConnect9797Server</Id>
+        <DisplayName>EximConnect 9797 Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.EximConnect9797Server</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancedb2158bde41d4a13b0e5cb33eebf1b65" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.LiasonECSGatewayServer</Id>
+        <DisplayName>Liason ECS Gateway Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.LiasonECSGatewayServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance2726772e0e604a3e8bd958f43a26e686" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.ICSSvrOutboundAS2Server</Id>
+        <DisplayName>ICSSvr Outbound AS2 Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancede23466d3d25458db7ed01f0a9b81de6" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.ICSSvrOutboundecUtopiaServer</Id>
+        <DisplayName>ICSSvr Outbound ecUtopia Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance0423972b1fcf4f31b26caa894e157ab6" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.ICSSvrOutboundLeanAS2Server</Id>
+        <DisplayName>ICSSvr Outbound Lean AS2 Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancef3726c72fd8847e7b1a976afa85098aa" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComAJBFolderMonitorServer</Id>
+        <DisplayName>eCom AJB Folder Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComAJBFolderMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancedbb3a983d1cf407f967210b376e25486" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComCheckOutgoingQueueServer</Id>
+        <DisplayName>eCom Check Outgoing Queue Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instanced6b9ebef95724868a284f5698c5c9fb8" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComDBQueueMonitorAFIServer</Id>
+        <DisplayName>eCom DB Queue Monitor AFI Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance78e1cfaa896c49fba954d20cf85d0111" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComDBQueueMonitorWVFServer</Id>
+        <DisplayName>eCom DBQueue Monitor WVF Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancea05dc1308f224dfcaab7a3ba92736121" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComEmailInboxMonitorServer</Id>
+        <DisplayName>eCom Email Inbox Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComEmailInboxMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance0a5bd93dd3ca48c291a0dc36aac3e897" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComFTPFolderMonitorAFIServer</Id>
+        <DisplayName>eCom FTP Folder Monitor AFI Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance50dfc68e18f84a0283c855a94242cddb" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComFTPFolderMonitorWVFServer</Id>
+        <DisplayName>eCom FTP Folder Monitor WVF Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance9568e0f122ea4b34a80197e856b1eba1" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComInboxMonitorAFIServer</Id>
+        <DisplayName>eCom Inbox Monitor AFI Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComInboxMonitorAFIServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance34a64883966e4f5880e4edefcaecc137" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComInboxMonitorWVFServer</Id>
+        <DisplayName>eCom Inbox Monitor WVF Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComInboxMonitorWVFServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance9f59d4aec62646628fdfa66c41f7cb94" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComTLEFolderMonitorServer</Id>
+        <DisplayName>eCom TLE Folder Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComTLEFolderMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instancee5464800e8ed47aa8c4a58a3bec0e7cb" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.EDIDailyReportingServer</Id>
+        <DisplayName>EDI Daily Reporting Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.EDIDailyReportingServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instanceac7382c8af164c32b38f375ec8e4a479" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.eComTransProcessorServer</Id>
+        <DisplayName>eCom TransProcessor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.eComTransProcessorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance628af3946f264742a3c2b4e37ab1bf69" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.EDISMTPQueueMonitorServer</Id>
+        <DisplayName>EDI SMTP Queue Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance8474ede4614a4e0c902986a9fb247917" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.MonitorServiceForHighJumpServer</Id>
+        <DisplayName>Monitor Service For HighJump Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance25acf7c2f49c47fbb638440377aeb22a" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.TransactionRouterServer</Id>
+        <DisplayName>Transaction Router Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.TransactionRouterServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance49de356cc6654eec97bbb1670a49f497" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.TransactionRouterAFTServer</Id>
+        <DisplayName>Transaction Router AFT Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.TransactionRouterAFTServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instanceda3613f9e3944c679bb3039515f46aa9" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.TransactionRouterEmailsServer</Id>
+        <DisplayName>Transaction Router Emails Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.TransactionRouterEmailsServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance7953ee684f154a3fa674fe543625bcb7" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.TransactionRouterVEDIServer</Id>
+        <DisplayName>Transaction Router VEDI Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.TransactionRouterVEDIServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance55e75aa1d22b435392fac35ce69aaf22" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.State.EximFolderMonitorServer</Id>
+        <DisplayName>Exim Folder Monitor Server</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.ComputerRole.EximFolderMonitorServer</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance5b12e7cce00b4be09b492c20232e4553" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ViewFolder>AFI.EDI.Folder</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.DiagramViewType</ViewType>
+        <Visible>true</Visible>
+        <Accessibility>Internal</Accessibility>
+        <Id>View.Diagram.Application</Id>
+        <DisplayName>Application</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AFI.EDI.Application</Target>
+        <Category>Operations</Category>
+      </CustomViewConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

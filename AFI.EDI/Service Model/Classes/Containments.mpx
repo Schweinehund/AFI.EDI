@@ -1,0 +1,242 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <RelationshipTypes>
+
+        <RelationshipType ID="AFI.EDI.ApplicationContainsServers" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Application"/>
+          <Target ID="Target" Type="AFI.EDI.Servers"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsNativeServicesServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.NativeServicesServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsLiasonECSServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.LiasonECSServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsNubridgesAS2Server" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.NubridgesAS2Server"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsEximConnect9797Server" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.EximConnect9797Server"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsLiasonECSGatewayServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.LiasonECSGatewayServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsICSSvrOutboundAS2Server" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.ICSSvrOutboundAS2Server"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsICSSvrOutboundecUtopiaServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.ICSSvrOutboundecUtopiaServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsICSSvrOutboundLeanAS2Server" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.ICSSvrOutboundLeanAS2Server"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComAJBFolderMonitorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComAJBFolderMonitorServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComCheckOutgoingQueueServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComCheckOutgoingQueueServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComDBQueueMonitorAFIServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComDBQueueMonitorAFIServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComDBQueueMonitorWVFServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComDBQueueMonitorWVFServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComEmailInboxMonitorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComEmailInboxMonitorServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComFTPFolderMonitorAFIServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComFTPFolderMonitorAFIServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComFTPFolderMonitorWVFServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComFTPFolderMonitorWVFServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComInboxMonitorAFIServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComInboxMonitorAFIServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComInboxMonitorWVFServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComInboxMonitorWVFServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComTLEFolderMonitorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComTLEFolderMonitorServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsEDIDailyReportingServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.EDIDailyReportingServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainseComTransProcessorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.eComTransProcessorServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsEDISMTPQueueMonitorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.EDISMTPQueueMonitorServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsMonitorServiceForHighJumpServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.MonitorServiceForHighJumpServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsTransactionRouterServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.TransactionRouterServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsTransactionRouterAFTServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.TransactionRouterAFTServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsTransactionRouterEmailsServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.TransactionRouterEmailsServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsTransactionRouterVEDIServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.TransactionRouterVEDIServer"/>
+        </RelationshipType>
+        <RelationshipType ID="AFI.EDI.ServersContainsEximFolderMonitorServer" Base="System!System.Containment" Abstract="false" Accessibility="Internal">
+          <Source ID="Source" Type="AFI.EDI.Servers"/>
+          <Target ID="Target" Type="AFI.EDI.ComputerRole.EximFolderMonitorServer"/>
+        </RelationshipType>
+        
+      </RelationshipTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+
+        <DisplayString ElementID="AFI.EDI.ApplicationContainsServers">
+          <Name>AFI EDI Application Contains Servers</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsNativeServicesServer">
+          <Name>AFI EDI Servers Contains Native Services Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsLiasonECSServer">
+          <Name>AFI EDI Servers Contains Liason ECS Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsNubridgesAS2Server">
+          <Name>AFI EDI Servers Contains Nubridges AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsEximConnect9797Server">
+          <Name>AFI EDI Servers Contains Exim Connect 9797 Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsLiasonECSGatewayServer">
+          <Name>AFI EDI Servers Contains Liason ECS Gateway Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsICSSvrOutboundAS2Server">
+          <Name>AFI EDI Servers Contains ICSSvr Outbound AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsICSSvrOutboundecUtopiaServer">
+          <Name>AFI EDI Servers Contains ICSSvr Outbound ecUtopia Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsICSSvrOutboundLeanAS2Server">
+          <Name>AFI EDI Servers Contains ICSSvr Outbound Lean AS2 Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComAJBFolderMonitorServer">
+          <Name>AFI EDI Servers Contains eCom AJB Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComCheckOutgoingQueueServer">
+          <Name>AFI EDI Servers Contains eCom Check Outgoing Queue Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComDBQueueMonitorAFIServer">
+          <Name>AFI EDI Servers Contains eCom DBQueue Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComDBQueueMonitorWVFServer">
+          <Name>AFI EDI Servers Contains eCom DBQueue Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComEmailInboxMonitorServer">
+          <Name>AFI EDI Servers Contains eCom Email Inbox Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComFTPFolderMonitorAFIServer">
+          <Name>AFI EDI Servers Contains eCom FTP Folder Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComFTPFolderMonitorWVFServer">
+          <Name>AFI EDI Servers Contains eCom FTP Folder Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComInboxMonitorAFIServer">
+          <Name>AFI EDI Servers Contains eCom Inbox Monitor AFI Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComInboxMonitorWVFServer">
+          <Name>AFI EDI Servers Contains eCom Inbox Monitor WVF Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComTLEFolderMonitorServer">
+          <Name>AFI EDI Servers Contains eCom TLE Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsEDIDailyReportingServer">
+          <Name>AFI EDI Servers Contains EDI Daily Reporting Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainseComTransProcessorServer">
+          <Name>AFI EDI Servers Contains eCom TransProcessor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsEDISMTPQueueMonitorServer">
+          <Name>AFI EDI Servers Contains EDI SMTP Queue Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsMonitorServiceForHighJumpServer">
+          <Name>AFI EDI Servers Contains Monitor Service For HighJump Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsTransactionRouterServer">
+          <Name>AFI EDI Servers Contains Transaction Router Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsTransactionRouterAFTServer">
+          <Name>AFI EDI Servers Contains Transaction Router AFT Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsTransactionRouterEmailsServer">
+          <Name>AFI EDI Servers Contains Transaction Router Emails Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsTransactionRouterVEDIServer">
+          <Name>AFI EDI Servers Contains Transaction Router VEDI Server</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AFI.EDI.ServersContainsEximFolderMonitorServer">
+          <Name>AFI EDI Servers Contains Exim Folder Monitor Server</Name>
+          <Description></Description>
+        </DisplayString>
+
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

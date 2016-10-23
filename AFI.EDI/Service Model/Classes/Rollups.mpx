@@ -1,0 +1,29 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+        
+        <ClassType ID="AFI.EDI.Application" Base="System!System.Service" Accessibility="Public" Abstract="false" Hosted="false" Singleton="true"/>
+        <ClassType ID="AFI.EDI.Servers" Base="System!System.Group" Accessibility="Public" Abstract="false" Hosted="false" Singleton="true"/>
+      
+      </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        
+        <DisplayString ElementID="AFI.EDI.Application">
+          <Name>AFI EDI Application</Name>
+          <Description></Description>
+        </DisplayString>
+
+        <DisplayString ElementID="AFI.EDI.Servers">
+          <Name>AFI EDI Servers</Name>
+          <Description></Description>
+        </DisplayString>
+
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>
